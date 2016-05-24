@@ -1,0 +1,41 @@
+﻿<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+  <ribbon>
+    <!--Configuración del menú personalizado del Ribbon de Office.
+        NOTAS:
+          - Cada tab, group y button "id" debe ser único. Regomiendo el uso de Group00, Group01... para evitar conflictos y mejorar la trazabilidad.
+          - Button "onAction": El comando que lanzará el botón del Ribbon. Debe ser exacto (case sentisive)
+          - Buttn imageMso: Podemos encontrar un listado online de referencias aquí: http://soltechs.net/customui/imagemso01.asp
+          - Button "onAction": El sub que se incluya aquí es necesario llamarlo con los argumentos: Optional ByVal control As IRibbonControl
+            Ejemplo:
+                Sub myPersonalizedRibbon(Optional ByVal control As IRibbonControl)
+                    'Code here'
+                End Sub
+    -->
+    <tabs>
+      <tab id="Tab0" label="Custom Tab0">
+        <group id="Group00" label="Custom Group00 Label">
+			<button id="Button000" imageMso="CopyToPersonalCalendar" label="Custom button000 label" size="large" onAction="actionRibbomButon000" />
+            <button id="Button001" imageMso="RecordsAddFromOutlook" label="Custom button001 label" size="large" onAction="actionRibbomButon001" />
+            <button id="Button002" imageMso="AcceptInvitation" label="Custom button002 label" size="large" onAction="actionRibbomButon002" />
+        </group>
+        <group id="Group01" label="Custom Group01 Label">
+			<button id="Button010" imageMso="CopyToPersonalCalendar" label="Custom button010 label" size="large" onAction="actionRibbomButon010" />
+            <button id="Button011" imageMso="RecordsAddFromOutlook" label="Custom button011 label" size="large" onAction="actionRibbomButon011" />
+            <button id="Button012" imageMso="AcceptInvitation" label="Custom button012 labl" size="large" onAction="actionRibbomButon012" />
+        </group>
+      </tab>
+      <tab id="Tab1" label="Custom Tab1">
+        <group id="Group10" label="Custom Group10 Label">
+			<button id="Button100" imageMso="CopyToPersonalCalendar" label="Custom button100 label" size="large" onAction="actionRibbomButon100" />
+            <button id="Button101" imageMso="RecordsAddFromOutlook" label="Custom button101 label" size="large" onAction="actionRibbomButon101" />
+            <button id="Button102" imageMso="AcceptInvitation" label="Custom button102 label" size="large" onAction="actionRibbomButon102" />
+        </group>
+        <group id="Group11" label="Custom Group11 Label">
+			<button id="Button110" imageMso="CopyToPersonalCalendar" label="Custom button110 label" size="large" onAction="actionRibbomButon110" />
+            <button id="Button111" imageMso="RecordsAddFromOutlook" label="Custom button111 label" size="large" onAction="actionRibbomButon111" />
+            <button id="Button112" imageMso="AcceptInvitation" label="Custom button112 labl" size="large" onAction="actionRibbomButon112" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
