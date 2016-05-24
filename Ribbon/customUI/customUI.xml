@@ -1,6 +1,7 @@
 ﻿<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
   <ribbon>
-    <!--Configuración del menú personalizado del Ribbon de Office.
+    <!--
+        Configuración del menú personalizado del Ribbon de Office.
         NOTAS:
           - Cada tab, group y button "id" debe ser único. Regomiendo el uso de Group00, Group01... para evitar conflictos y mejorar la trazabilidad.
           - Button "onAction": El comando que lanzará el botón del Ribbon. Debe ser exacto (case sentisive)
